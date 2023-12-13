@@ -12,7 +12,8 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">
-        <ul>
+        
+        <ul v-if="arrayEmail.length === 10">
             <!-- stampaggio delle email dentro a i li -->
            <li v-for="(email,i) in arrayEmail" :key="i">
                 {{email}}
