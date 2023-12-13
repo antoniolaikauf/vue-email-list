@@ -7,10 +7,13 @@ createApp({
         }
     },
     mounted(){
+        // ciclo for per crichiedere le email
+      for (let i = 0; i < 10; i++) {
         // richiesta per prendere email
-       axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
-       .then((risposta)=>{
-        console.log(risposta.data.response);
-       })
+        axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
+        .then((risposta)=>{
+         console.log(risposta.data.response);
+        })
+      }
     }
 }).mount("#app")
