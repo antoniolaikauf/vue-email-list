@@ -13,7 +13,10 @@
 
     <div id="app">
         <ul>
-           
+            <!-- stampaggio delle email dentro a i li -->
+           <li v-for="(email,i) in arrayEmail" :key="i">
+                {{email}}
+           </li>
         </ul>
     </div>
 
